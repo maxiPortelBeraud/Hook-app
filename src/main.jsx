@@ -1,11 +1,11 @@
-import React from "react";
+//import React from "react";
 import ReactDOM from "react-dom/client";
 
 import {
-  //BrowserRouter,
-  createBrowserRouter,
+  BrowserRouter,
+  /* createBrowserRouter,
   Navigate,
-  RouterProvider,
+  RouterProvider, */
 } from "react-router-dom";
 
 //import CounterApp from "./01-useState/CounterApp";
@@ -22,11 +22,11 @@ import {
 //import { Padre } from "./07-tarea-memo/Padre";
 //import "./08-useReducer/intro-reducer";
 //import { TodoApp } from "./08-useReducer/TodoApp";
-import { AboutPage, HomePage, LoginPage, MainApp } from "./09-useContext";
+import { /* AboutPage, HomePage, LoginPage, */ MainApp } from "./09-useContext";
 
 import "./index.css";
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path: "/",
     element: <MainApp />,
@@ -49,13 +49,13 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+]); //Versión nueva */
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  /* <BrowserRouter>
+  <BrowserRouter>
     <MainApp />
-  </BrowserRouter> //versión vieja */
-  <React.StrictMode>
+  </BrowserRouter> //versión vieja
+  /* <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode> //Versión nueva */
 );
