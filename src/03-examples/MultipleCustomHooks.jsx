@@ -3,7 +3,7 @@ import { ButtonsPrevNext, LoadingCharacter, CardCharacter } from "./index";
 
 export const MultipleCustomHooks = () => {
   const { counter, incrementValue, decrementValue } = useCounter(1);
-  const { data, isLoading /* , hasError */ } = useFetch(
+  const { data, isLoading , hasError } = useFetch(
     `https://rickandmortyapi.com/api/character/${counter}`
   );
   //Para arrays
